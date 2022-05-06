@@ -1,0 +1,246 @@
+
+.header-v2 .top-header {
+  background-color: #000000;
+  border-bottom: 1px solid rgb(221 221 221 / 42%);
+  padding: 0;
+  color: #fff;
+  line-height: 20px;
+}
+
+.header-v2 .top-header .contact-header {
+  z-index: 999;
+  display: flex;
+  align-items: center;
+}
+
+.header-v2 .top-header .contact-header p {
+  font-size: 17px;
+  font-weight: 400;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.header-v2 .top-header .account-urls {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+
+.header-v2 .top-header .account-urls .top-header-right-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-v2 .top-header .account-urls .enfti-social-link {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  margin-right: 15px;
+  list-style: none;
+}
+
+.header-v2 .top-header .account-urls .enfti-social-link li a {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.header-v2 .top-header .account-urls .enfti-social-link li a i {
+  color: #9b9b9b;
+  margin-right: 5px;
+}
+
+.header-v2 .top-header .account-urls .enfti-social-link li a:hover i {
+  color: #797979;
+}
+
+.header-v2 .top-header .account-urls .top-inquiry-button {
+  background-image: linear-gradient(
+    to right,
+    #647ecb,
+    #d01498,
+    #d01498,
+    #647ecb
+  );
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 13px 25px;
+  text-decoration: none;
+  background-size: 300% 100%;
+  overflow: visible;
+  transition: all 0.4s ease-in-out;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.header-v2 .top-header .account-urls .top-inquiry-button:hover {
+  background-size: 100% 300%;
+}
+
+.is_transparent #enefti-main-head {
+  background: transparent !important;
+  width: 100%;
+  z-index: 200;
+}
+
+.end-header .logo a img {
+  padding: 30px 0;
+}
+
+.end-header .menu-nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.end-header .menu-nav li {
+  display: flex;
+  padding: 10px 17px;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.end-header .menu-nav li.has-dropdown {
+  position: relative;
+}
+
+.end-header .menu-nav li.has-dropdown .menu-dropdown {
+  position: absolute;
+  left: 15px;
+  top: 140%;
+  background: #fff;
+  padding: 0;
+  z-index: 9999;
+  width: 220px;
+  transition: all 0.4s ease;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.end-header .menu-nav li.has-dropdown .menu-dropdown::after {
+    content:"";
+    width:0px;
+    height:0px;
+    position:absolute;
+    border:10px solid transparent;
+    border-bottom:10px solid #fff;
+    left:10%;
+    top:-20px;
+}
+
+.end-header .menu-nav li.has-dropdown:hover .menu-dropdown {
+    opacity: 1;
+    visibility: inherit;
+    transform: scale(1);
+}
+
+.end-header .menu-nav li.has-dropdown .menu-dropdown li:hover {
+  color: #d01498;
+}
+
+.end-header .menu-nav li.has-dropdown .menu-dropdown li {
+  color: #acacac;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  position: relative;
+  padding: 15px;
+}
+
+.end-header .menu-nav li:hover {
+  color: rgb(197, 197, 197);
+}
+
+.end-header .btn-end-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 0;
+  margin: 25px;
+}
+
+.end-header .btn-end-header .btn-search,
+.btn-menu {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 200;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.end-header .btn-end-header .btn-sign {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-top: -1px;
+}
+
+.box-border {
+  border-bottom: 1px solid rgb(221 221 221 / 42%);
+}
+
+.end-header .btn-end-header .btn-user {
+  margin: 18px 10px;
+}
+
+.end-header .btn-end-header .btn-user i {
+  background: linear-gradient(to right, #647ecb, #d01498);
+  padding: 10px;
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 900;
+}
+
+.banner-content {
+    background-image: url(../images/Main-slider_pattern.jpg);
+    width: 100%;
+    height: auto;
+
+  }
+
+
+/* media screen */
+@media only screen and (max-width: 1400px) {
+}
+
+@media only screen and (max-width: 1200px) {
+  .end-header .btn-end-header {
+    padding: 0;
+    margin: 0;
+  }
+  .end-header .logo a img {
+    padding: 18px 0;
+  }
+}
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 767px) {
+  .header-v2 .top-header .account-urls {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .header-v2 .top-header .contact-header {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 576px) {
+}
+
+@media only screen and (max-width: 479px) {
+}
+/* media screen */
