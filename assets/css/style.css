@@ -683,6 +683,8 @@
   align-items: center;
   list-style: none;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 
 .vc-hottest-bids .vs-tabs-list .vs-tabs {
@@ -703,6 +705,11 @@
   text-decoration: none;
 }
 
+.vc-hottest-bids .vs-tabs-list .vs-tabs a i {
+  margin-right: 5px;
+  font-size: 1rem;
+}
+
 .vc-hottest-bids .vs-tabs-list .vs-tabs:hover {
   color: #647ECB;
   border: 1px solid #647ECB;
@@ -716,6 +723,73 @@
 }
 
 /* hottest bids */
+
+/* start create sell nft */
+
+.start-create-sell-NFT {
+  background-image: url(../images/Main-services_bg.jpg);
+  /* margin-bottom: 35px; */
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.start-create-sell-NFT .title-section {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.4;
+}
+
+.start-create-sell-NFT .vc-column-innner {
+  padding-top: 35px;
+}
+
+
+.start-create-sell-NFT .item-sell .title-subtile {
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.start-create-sell-NFT .item-sell p {
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.4;
+  font-size: 19px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.start-create-sell-NFT .item-sell .title-subtile span {
+  color: #cccccc;
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+
+.start-create-sell-NFT .item-sell .icon-subtile {
+  margin-top: 18px;
+  transition: all 0.3s ease;
+}
+
+.start-create-sell-NFT .item-sell a span {
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  padding: 18px 18px 13px;
+  background: #d01498;
+  border-radius: 50%;
+}
+
+.start-create-sell-NFT .item-sell .icon-subtile:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+
+/* end create sell nft */
 
 
 /* media screen */
@@ -737,7 +811,11 @@
     line-height: 30px;
   }
   .vc-hottest-bids .vs-tabs-list {
-    padding-top: 10px;
+    justify-content: center;
+  }
+
+  .vc-hottest-bids .vs-tabs-list .vs-tabs {
+    margin-top: 10px;
   }
 }
 
@@ -764,6 +842,11 @@
   }
   .has-footer-widgets .container-footer .widget-text h3 {
     padding-bottom: 20px;
+  }
+  .start-create-sell-NFT .item-sell p {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
   }
 }
 @media only screen and (max-width: 576px) {
