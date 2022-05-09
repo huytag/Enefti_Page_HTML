@@ -267,8 +267,6 @@
 .has-footer-widgets {
   background: #000000;
 }
-
-/* end footer */
 .has-footer-widgets .top-footer {
   padding: 20px;
   border-bottom: 0.5px solid #505050;
@@ -315,7 +313,7 @@
 }
 
 .has-footer-widgets .container-footer .widget-text p {
-  color: #CCCCCC;
+  color: #cccccc;
   padding-bottom: 20px;
   margin: 0;
 }
@@ -363,7 +361,7 @@
 .has-footer-widgets .container-footer .widget-text .menu-marketplace ul li {
   font-size: 17px;
   font-weight: 400;
-  color: #CCCCCC;
+  color: #cccccc;
   line-height: 20px;
   margin-bottom: 10px;
 }
@@ -402,13 +400,284 @@
 }
 
 .has-footer-widgets .container-footer .widget-text .input-group .btn-email i {
-  color: #D01498;
+  color: #d01498;
   font-size: 24px;
 }
 
-.has-footer-widgets .container-footer .widget-text .input-group .btn-email i:hover {
+.has-footer-widgets
+  .container-footer
+  .widget-text
+  .input-group
+  .btn-email
+  i:hover {
   color: #000000;
 }
+/* end footer */
+
+/* vc latest news  */
+
+.pdb--50 {
+  padding-bottom: 50px;
+}
+
+.latest-news {
+  background: #fff;
+}
+
+.latest-news .blog-posts-wrapper {
+  box-shadow: 0 0 25px rgb(0 0 0 / 10%);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.latest-news .blog-posts-wrapper .blog-posts-image img {
+  max-width: 100%;
+  transition: 0.3s;
+}
+
+.latest-news .blog-posts-wrapper .blog-posts-head-content {
+  padding: 25px 30px 10px;
+}
+
+.latest-news .blog-posts-wrapper .blog-posts-head-content .post-date {
+  color: #999999;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.latest-news .blog-posts-wrapper .blog-posts-head-content .post-name {
+  font-size: 21px;
+  line-height: 1.5;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.latest-news .blog-posts-wrapper .blog-posts-head-content p {
+  line-height: 25px;
+  font-size: 17px;
+  color: #565656;
+  font-weight: 400;
+}
+
+.latest-news .blog-posts-wrapper .blog-posts-image {
+  position: relative;
+}
+
+.latest-news .blog-posts-wrapper .blog-posts-image .blog-post-button {
+  position: absolute;
+  display: flex;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s ease;
+}
+
+.latest-news
+  .blog-posts-wrapper
+  .blog-posts-image
+  .blog-post-button
+  .content-inside {
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 60px;
+  font-weight: 600;
+  align-self: center;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+}
+
+.latest-news
+  .blog-posts-wrapper
+  .blog-posts-image
+  .blog-post-button
+  .content-inside
+  a {
+  padding: 12px 15px;
+  display: block;
+  box-shadow: 0 0 25px rgb(0 0 0 / 20%);
+  color: #fff;
+  border-radius: 5px;
+  background: linear-gradient(to right, #647ecb, #d01498);
+  background-size: 300% 100%;
+  transition: 0.3s;
+}
+
+.latest-news
+  .blog-posts-wrapper
+  .blog-posts-image:hover
+  .blog-post-button
+  .content-inside {
+  margin-top: 0px;
+}
+
+.latest-news .blog-posts-wrapper .blog-posts-image:hover .blog-post-button {
+  opacity: 1;
+  visibility: inherit;
+}
+
+.latest-news .blog-posts-wrapper .blog-posts-image:hover img {
+  filter: brightness(50%);
+}
+
+
+.latest-news .blog-posts-wrapper .blog-posts-image .blog-post-button a:hover {
+  background-size: 100% 300%;
+  cursor: pointer;
+}
+
+.mt-addons-title-subtile {
+  margin-bottom: 25px;
+}
+
+.mt-addons-title-subtile h2 {
+  color: #242424;
+  font-size: 30px;
+  line-height: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+/* vc latest news  */
+
+/* hottest bids */
+
+.vc-hottest-bids {
+  background: #fff;
+}
+
+.vc-hottest-bids .product-wrapper {
+  box-shadow: 0 0 25px rgb(0 0 0 / 10%);
+  overflow: hidden;
+  margin-bottom: 30px;
+  padding: 20px;
+  padding-bottom: 0px;
+  transition: all 250ms ease-in-out 0s;
+}
+
+.vc-hottest-bids .product-wrapper .thumbnail-and-details {
+  border-bottom: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.vc-hottest-bids .product-wrapper .thumbnail-and-details img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 0 1rem;
+  box-shadow: none;
+}
+
+.vc-hottest-bids .product-wrapper .thumbnail-and-details .thumbnail-product-button {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.vc-hottest-bids .product-wrapper .thumbnail-and-details .thumbnail-product-button .content-inside {
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-weight: 600;
+  align-self: center;
+  transition: all 0.3s ease;
+}
+
+.vc-hottest-bids .product-wrapper .thumbnail-and-details .thumbnail-product-button a {
+  padding: 12px 15px;
+  display: block;
+  box-shadow: 0 0 25px rgb(0 0 0 / 20%);
+  color: #fff;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to right,
+    #647ecb,
+    #d01498,
+    #d01498,
+    #647ecb
+  );
+  background-size: 300% 100%;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.vc-hottest-bids .product-wrapper .thumbnail-and-details .thumbnail-product-button a:hover {
+  background-size: 100% 300%;
+  cursor: pointer;
+}
+
+.vc-hottest-bids .product-wrapper .thumbnail-and-details .thumbnail-product-button .content-inside i {
+  font-size: 14px;
+  margin-right: 7px;
+}
+
+.vc-hottest-bids .product-items:hover .product-wrapper .thumbnail-and-details .thumbnail-product-button {
+  opacity: 1;
+  visibility: inherit;
+}
+
+.vc-hottest-bids .product-items:hover .product-wrapper .thumbnail-and-details .thumbnail-product-button .content-inside {
+  margin-top: 0px;
+}
+
+.vc-hottest-bids .product-items .woocmmerce-title-metas .title-wishlist-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.vc-hottest-bids .product-items .woocmmerce-title-metas .title-wishlist-wrapper h3 {
+  font-size: 17px;
+  padding: 0;
+  margin: 0;
+  line-height: 22px;
+  transition: 0.3s;
+  font-weight: 600;
+  width: 100%;
+}
+
+.vc-hottest-bids .product-items .woocmmerce-title-metas .title-wishlist-wrapper h3:hover {
+  color: #d01498;
+  cursor: pointer;
+}
+
+.vc-hottest-bids .product-items .woocmmerce-title-metas .title-wishlist-wrapper i:hover {
+  color: #d01498;
+  cursor: pointer;
+}
+
+.vc-hottest-bids .product-items .woocmmerce-title-metas .details-container {
+  overflow: hidden;
+  padding: 15px 5px 20px;
+}
+
+.vc-hottest-bids .product-items .woocmmerce-title-metas .details-container .name {
+  display: block;
+  font-size: 14px;
+  color: #90909090;
+}
+
+.vc-hottest-bids .product-items .woocmmerce-title-metas .details-container .price {
+  font-size: 15px;
+  color: #222222;
+  font-weight: 700;
+}
+
+/* hottest bids */
 
 /* media screen */
 @media only screen and (max-width: 1400px) {
