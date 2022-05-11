@@ -3,8 +3,9 @@
     $(document).ready(function () {
       liveSlickListTopFooter();
       liveSlickListCollections();
+      clickSlickBtnPrevCollection();
+      clickSlickBtnNextCollection();
     });
-    
 
     function liveSlickListCollections() {
       $(".slick-collections")
@@ -15,6 +16,8 @@
           speed: 300,
           slidesToShow: 4,
           slidesToScroll: 1,
+          prevArrow: false,
+          nextArrow: false,
           responsive: [
             {
               breakpoint: 1200,
@@ -60,6 +63,23 @@
         });
     }
 
+    function clickSlickBtnPrevCollection() {
+      const el = $(".collection-btn-prev");
+      if (el.length > 0) {
+        el.on("click", function (e) {
+          $(".slick-collections").filter(".slick-initialized").slick("slickPrev");
+        });
+      }
+    }
+
+    function clickSlickBtnNextCollection() {
+      const el = $(".collection-btn-next");
+      if (el.length > 0) {
+        el.on("click", function (e) {
+          $(".slick-collections").filter(".slick-initialized").slick("slickNext");
+        });
+      }
+    }
 
     function liveSlickListTopFooter() {
       $(".slick-list-top-header")
